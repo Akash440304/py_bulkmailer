@@ -3,8 +3,8 @@ import os
 import imghdr
 from email.message import EmailMessage
 
-# EMAIL_ADDRESS = os.environ.get('fercaswilia@gmail.com')
-# EMAIL_PASSWORD = os.environ.get('Kofan6184')
+# EMAIL_ADDRESS = os.environ.get('peterparkar391@gmail.com')
+# EMAIL_PASSWORD = os.environ.get('hvbtetxfelpbbixb')
 
 
 # e = pd.read_excel("Email.xlsx")
@@ -15,9 +15,9 @@ msg['Subject'] = 'Hey Your Order Is Ready To Activated!'
 msg['From'] = 'fercaswilia@gmail.com'
 
 # for email in emails:
-msg['To'] = 'sarwarjah@gmail.com,akashchakraborty606@gmail.com'
+msg['To'] = 'akashchakraborty606@gmail.com'
 
-msg.set_content('This is a plain text email')
+msg.set_content('Your Order Successfully Done')
 
 msg.add_alternative("""\
 <!DOCTYPE html>
@@ -273,7 +273,7 @@ msg.add_alternative("""\
 
 server = smtplib.SMTP("smtp.gmail.com", 587)
 server.starttls()
-server.login('fercaswilia@gmail.com','Kofan6184')
+server.login('peterparkar391@gmail.com','hvbtetxfelpbbixb')
 server.send_message(msg)
 server.quit()
 
